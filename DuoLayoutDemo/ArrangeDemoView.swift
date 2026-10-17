@@ -24,7 +24,11 @@ struct ArrangeDemoView: View {
     }
 
     private var arrangement: some View {
-        List(1...12, id: \.self) { Text("Photo \($0)") }
+        ArrangementView {
+            List(1...12, id: \.self) { Text("Photo \($0)") }
+        } secondary: {
+            EditorPane()
+        }
     }
 }
 

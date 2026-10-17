@@ -2,7 +2,7 @@
 
 A SwiftUI project that shows what the **iPhone Duo** changes for your app in Xcode 27.1: **toolbars that move, a fold your layout can see, a hinge you can read, and two panes that snap to it.**
 
-> **You are on `main`, the starter.** The finished code is on the [`finished`](../../tree/finished) branch.
+> **You are on `finished`, the completed code.** The starter is on [`main`](../../tree/main).
 
 ---
 

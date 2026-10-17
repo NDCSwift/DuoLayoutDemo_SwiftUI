@@ -18,10 +18,10 @@ struct ToolbarDemoView: View {
                     Button("Settings", systemImage: "gear") {}
                 }
                 ToolbarItem(placement: .topBarTrailing) {
-                    HStack {
-                        sortMenu
-                        addButton
-                    }
+                    sortMenu
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    addButton
                 }
             }
         }

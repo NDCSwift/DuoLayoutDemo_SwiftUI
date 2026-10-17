@@ -15,6 +15,9 @@ struct HingeDemoView: View {
                 .font(.body.monospaced())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .onHingeChange { _, newContext in
+            hinge = newContext.hinge
+        }
     }
 
     private var tilt: Angle {

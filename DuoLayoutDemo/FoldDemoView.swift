@@ -2,7 +2,11 @@ import SwiftUI
 
 struct FoldDemoView: View {
     var body: some View {
-        RegionMap(folds: [], cameras: [])
+        GeometryReader { proxy in
+            let folds = proxy.reservedRegions(kind: .division, options: .includeInactive)
+            let cameras = proxy.reservedRegions(kind: .occlusion)
+            RegionMap(folds: folds, cameras: cameras)
+        }
     }
 }
 
